@@ -1,9 +1,9 @@
 # Step-by-step guides for producing geospatial SDGs in QGIS
 This repository hosts a collection of practical, step-by-step guides for modeling Sustainable Development Goal (SDG) indicators using QGIS, open data, and geospatial techniques. The materials were developed as part of the ESCAP project “The 2030 Data Decade – Strengthening the institutional capacity of national statistical offices in Asia and the Pacific to use innovative, new and big data sources for official statistics.”
 
-These guides are intended to support National Statistical Offices (NSOs), GIS practitioners, and policy analysts in integrating statistical and geospatial data to produce robust, repeatable analyses for SDG monitoring.
+These guides are intended to support National Statistical Offices (NSOs), GIS practitioners and policy analysts in integrating statistical and geospatial data to produce robust, repeatable analyses for SDG monitoring.
 
-## 📄 Guides
+## Guides
 
 ### 1. **Modeling DEGURBA (Degree of Urbanization)**
 - **File:** `KGZ_Degurba_QGISstepbystepFinal_ENG_pub_final.pdf` (ENGLISH)
@@ -17,11 +17,11 @@ These guides are intended to support National Statistical Offices (NSOs), GIS pr
 - **File:** `KGZ_1131_QGISStepbystep_ENG_pub_final.pdf` (ENGLISH)
 - **Focus:** Comparing urban land expansion and population growth using time-series LULC and WorldPop data.
 
-> 🗂 Russian-language versions of the guides will be added soon.
+> 🗂 Russian-language versions of the guides will be available soon.
 
 ---
 
-## 📂 Data
+## Data
 
 All required datasets for replicating the tutorials are included in the [`data/`](./data) folder. This includes:
 
@@ -34,7 +34,7 @@ All required datasets for replicating the tutorials are included in the [`data/`
 
 > 📌 All spatial datasets are preprocessed and projected to appropriate coordinate systems, ready to use in QGIS.
 
-## 🛠 Requirements
+## Requirements
 
 To follow the tutorials effectively, you should have:
 - Basic experience with QGIS
@@ -44,11 +44,11 @@ To follow the tutorials effectively, you should have:
   - Minimum 8–16 GB RAM (32 GB recommended)
   - Dedicated GPU (optional but helpful)
 
-## ✍️ Author & Contact
+## Author & Contact
 
 Developed by **Elena Hristev**, Consultant, UN ESCAP  
 📧 escap-statistics@un.org
 
-## 📜 License
+## License
 
 This repository is intended for educational and institutional use. Attribution to the ESCAP project and the original author is requested when reusing or adapting the materials.
