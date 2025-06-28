@@ -1,5 +1,5 @@
 # Step-by-step guides for producing geospatial SDGs in QGIS
-This repository hosts a collection of practical, step-by-step guides for modeling Sustainable Development Goal (SDG) indicators using QGIS, open data, and geospatial techniques. The materials were developed as part of the ESCAP project “The 2030 Data Decade – Strengthening the institutional capacity of national statistical offices in Asia and the Pacific to use innovative, new and big data sources for official statistics.”
+This repository hosts a collection of practical, step-by-step guides for modeling Sustainable Development Goal (SDG) indicators using QGIS, open data, and geospatial techniques. The materials were developed as part of the ESCAP project “The 2030 Data Decade – Strengthening the institutional capacity of national statistical offices in Asia and the Pacific to use innovative, new and big data sources for official statistics.” This project was funded by the 2030 Agenda subfund of the UN Peace and Development Trust Fund. 
 
 These guides are intended to support National Statistical Offices (NSOs), GIS practitioners and policy analysts in integrating statistical and geospatial data to produce robust, repeatable analyses for SDG monitoring.
 
