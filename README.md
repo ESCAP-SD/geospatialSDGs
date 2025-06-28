@@ -7,7 +7,7 @@ These guides are intended to support National Statistical Offices (NSOs), GIS pr
 
 ### 1. **Modeling DEGURBA (Degree of Urbanization)**
 - **File:** `KGZ_Degurba_QGISstepbystepFinal_ENG_pub_final.pdf` (ENGLISH)
-- **Focus:** Add text here
+- **Focus:** Applying the Degree of Urbanization classification to map urban extent. 
 
 ### 2. **Modeling SDG 9.1.1: Rural Population Access to Roads**
 - **File:** `KGZ_911_QGISStepbystep_ENG_pub_final.pdf` (ENGLISH)
