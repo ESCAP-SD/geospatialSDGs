@@ -6,15 +6,15 @@ These guides are intended to support National Statistical Offices (NSOs), GIS pr
 ## Guides
 
 ### 1. **Modeling DEGURBA (Degree of Urbanization)**
-- **File:** `KGZ_Degurba_QGISstepbystepFinal_ENG_pub_final.pdf` (ENGLISH)
+- **[Download PDF](./KGZ_Degurba_QGISstepbystep_ESCAP.pdf)** (ENGLISH)
 - **Focus:** Applying the Degree of Urbanization classification to map urban extent. 
 
 ### 2. **Modeling SDG 9.1.1: Rural Population Access to Roads**
-- **File:** `KGZ_911_QGISStepbystep_ENG_pub_final.pdf` (ENGLISH)
+- **[Download PDF](./KGZ_911_QGISstepbystepFinal_ENG_ESCAP.pdf)** (ENGLISH)
 - **Focus:** Estimating the share of rural population within 2 km of all-season roads using OSM and population data.
 
 ### 3. **Modeling SDG 11.3.1: Ratio of Land Consumption rate to Population Growth**
-- **File:** `KGZ_1131_QGISStepbystep_ENG_pub_final.pdf` (ENGLISH)
+- **[Download PDF](./KGZ_1131_QGISstepbystepFinal_ENG_ESCAP.pdf)** (ENGLISH)
 - **Focus:** Comparing urban land expansion and population growth using time-series LULC and WorldPop data.
 
 > 🗂 Russian-language versions of the guides will be available soon.
