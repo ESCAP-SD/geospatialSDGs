@@ -19,6 +19,8 @@ These guides are intended to support National Statistical Offices (NSOs), GIS pr
 
 > 🗂 Russian-language versions of the guides will be available soon.
 
+**Note:** Throughout this guide, we sometimes use maps to visualize both geospatial data and outcomes. The boundaries and names shown and the designations used on these maps do not imply official endorsement or acceptance by the United Nations.
+
 ---
 
 ## Data
