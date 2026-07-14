@@ -1,0 +1,111 @@
+---
+title: ""
+title-block-style: none
+page-layout: full
+
+---
+
+::: {.columns .home-logos-split}
+
+::: {.column}
+![](assets/escap_logo.png){.home-logo .escap}
+:::
+
+::: {.column style="text-align: right;"}
+![](assets/sdg9.png){.home-logo .sdg9}
+
+:::
+
+:::
+
+# Introduction
+
+## SDG indicator 9.1.1
+
+The indicator (commonly known as the Rural Access Index or RAI) measures the proportion of the rural population that live within 2 km of an all-season road. Progress on this indicator contributes to the realization of SDG 9 on building resilient infrastructure, promoting inclusive and sustainable industrialization and foster innovation.
+
+This indicator is a key metric for assessing rural connectivity and accessibility, crucial for economic development, access to services, and overall human well-being. The very nature of the indicator suggests two major geospatial data inputs: **an all-season roads dataset** and **rural population statistics**. Both datasets are inherently geospatial, enabling direct spatial modeling of the indicator.
+
+**Key data inputs and considerations:**
+
+**1. All-season roads network data:**
+
+- **Definition:** An “all-season road” is defined as a road that is motorable all year round by the prevailing means of rural transport (often a pick-up or a truck which does not have four-wheel drive).
+
+- **Format:** Vector data (lines) representing the road network.
+
+- **Considerations:** National road network data may sometimes lack explicit information on seasonality. In such cases, all represented roads might be used as a proxy for all-season roads, as demonstrated in the Kyrgyzstan case study. Upon availability of precise, topologically correct data with explicit indications of all-seasonality, such data should be prioritized for more accurate modeling.
+
+**2. Rural population data:**
+
+- **Definition:** Geocoded population data specifically for rural areas. This could be in point format (e.g., individual buildings with population attributes) or raster format (population grids).
+
+- **Format:** Point shapefile with rural buildings containing population statistics in rural areas.
+
+- **Considerations:** For robust modeling, the most reliable data is national geocoded data for "rural" buildings (representing rural population) based on cadastral information or equivalent, with a clear definition of whether buildings are in urban or rural areas. This distinction is critical to ensure that only the rural population is included in the calculation. In cases where national data are not available, globally produced urban extents may be used, such as the [Global Rural-Urban Mapping Project v1 Urban Extents Grid](https://www.earthdata.nasa.gov/data/catalog/sedac-ciesin-sedac-grumpv1-ext-1.00).
+
+**Spatial reference system**
+
+All datasets used in this guide are assumed to have a common spatial reference system (e.g., WGS 1984 UTM Zone 43N for the Kyrgyzstan example). For seamless modeling, please ensure all your input datasets are projected into a consistent and appropriate spatial reference system relevant to your country or region.
+
+**Input geodata sources (examples)**
+
+The table below provides examples of the input geospatial data used in this guide. Users are expected to identify and procure equivalent open or national administrative datasets for their specific region. For the Kyrgyzstan case study, data was sourced from national custodian bodies.
+
+Table 1: Input geodata used in this guide
+
+<table>
+  <tr>
+    <th>Geodata</th>
+    <th>Name of geodata</th>
+    <th>National/Open Data</th>
+    <th>Used in Analysis</th>
+    <th>Link</th>
+  </tr>
+  
+  <tr>
+    <td colspan="5">**Administrative**</td>
+  </tr>
+  
+  <tr>
+    <td>Kemin rayon boundary</td>
+    <td>Kemin_KGZ</td>
+    <td>National</td>
+    <td>Yes</td>
+    <td>[Kemin_KGZ](https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20Inputdata.zip?download=)</td>
+  </tr>
+  
+  <tr>
+    <td>Chuy region boundary</td>
+    <td>Chuy_KGZ</td>
+    <td>National</td>
+    <td>No (visual only)</td>
+    <td>[Chuy_KGZ](https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20Inputdata.zip?download=)</td>
+  </tr>
+  
+  <tr>
+    <td colspan="5">**Road network**</td>
+  </tr>
+  
+  <tr>
+    <td>All-season roads for Kyrgyzstan</td>
+    <td>KGZ_allroads</td>
+    <td>National</td>
+    <td>Yes</td>
+    <td>[KGZ_allroads](https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20Inputdata.zip?download=)</td>
+  </tr>
+  
+  <tr>
+    <td colspan="5">**Population in rural areas**</td>
+  </tr>
+  
+  <tr>
+    <td>Buildings in rural areas with population information in Chuy region</td>
+    <td>Chuy_buildingsUTM43.shp</td>
+    <td>National</td>
+    <td>Yes</td>
+    <td>[Chuy_buildingsUTM43.shp](https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20Inputdata.zip?download=)</td>
+  </tr>
+</table>
+
+Upon completion of the guide you can assess your results against the outputs from the actual project with all deliverables and geospatial datasets available via this [link](https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20ResultData.zip?download=).

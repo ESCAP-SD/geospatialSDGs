@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Step-by-step Guide on Estimating SDG 9.1.1 Using Geospatial Data"
+  favicon: assets/sdg9.png
+  
+  sidebar:
+    style: "docked"
+    contents:
+      - text: "Home"
+        href: index.qmd
+      - text: "Introduction"
+        href: introduction.qmd
+      - text: "Step 1: Preparing Geodata"
+        href: step1.qmd
+      - text: "Step 2: Road Network Geodata Processing and Analytics"
+        href: step2.qmd
+      - text: "Step 3: Rural Areas Geodata Processing and Analytics"
+        href: step3.qmd
+      - text: "Step 4: Modeling Rural Population within 2 km of All-Season Roads"
+        href: step4.qmd
+      - text: "Recommendations and Conclusion"
+        href: conclusion.qmd
+        
+  navbar:
+    background: "#0066B0"
+    foreground: "#FFFFFF"
+    logo: assets/escap_alternate_white.png
+    logo-alt: "ESCAP"
+    right:
+      - text: "Home"
+        href: index.qmd
+
+  page-footer:
+    left: "Economic and Social Commission for Asia and the Pacific"
+    right:
+      - text: "Big Data and Data Science for Official Statistics in Asia and the Pacific"
+        
+format:
+  html:
+    toc: false
+    toc-location: left
+    toc-depth: 1
+    css: 
+     - styles.css
+     - dt.css
+
+     
