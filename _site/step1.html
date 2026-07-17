@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./step1.html">Step 1: Preparing geodata</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./step1.html">Step 1: Preparing Geodata</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -133,14 +133,38 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1introduction.qmd" class="sidebar-item-text sidebar-link">
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./step1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Step 1: Preparing geodata</span></a>
+ <span class="menu-text">Step 1: Preparing Geodata</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 2: Road Network Geodata Processing and Analytics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 3: Rural Areas Geodata Processing and Analytics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 4: Modeling Rural Population within 2 km of All-Season Roads</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recommendations and Conclusion</span></a>
   </div>
 </li>
     </ul>
@@ -165,135 +189,19 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="step-1-preparing-geodata" class="level1">
 <h1>Step 1: Preparing Geodata</h1>
-<p>The methodology below is presented in a step-by-step approach from data processing to indicator calculation, primarily using QGIS.</p>
-<section id="create-a-dedicated-project-folder" class="level2">
-<h2 class="anchored" data-anchor-id="create-a-dedicated-project-folder">1. Create a dedicated project folder:</h2>
-<p>The indicator (commonly known as the Rural Access Index or RAI) measures the proportion of the rural population that live within 2 km of an all-season road. Progress on this indicator contributes to the realization of SDG 9 on building resilient infrastructure, promoting inclusive and sustainable industrialization and foster innovation.</p>
-<p>This indicator is a key metric for assessing rural connectivity and accessibility, crucial for economic development, access to services, and overall human well-being. The very nature of the indicator suggests two major geospatial data inputs: <strong>an all-season roads dataset</strong> and <strong>rural population statistics</strong>. Both datasets are inherently geospatial, enabling direct spatial modeling of the indicator.</p>
-<p><strong>Key data inputs and considerations:</strong></p>
-<p><strong>1. All-season roads network data:</strong></p>
-<ul>
-<li><p><strong>Definition:</strong> An “all-season road” is defined as a road that is motorable all year round by the prevailing means of rural transport (often a pick-up or a truck which does not have four-wheel drive).</p></li>
-<li><p><strong>Format:</strong> Vector data (lines) representing the road network.</p></li>
-<li><p><strong>Considerations:</strong> National road network data may sometimes lack explicit information on seasonality. In such cases, all represented roads might be used as a proxy for all-season roads, as demonstrated in the Kyrgyzstan case study. Upon availability of precise, topologically correct data with explicit indications of all-seasonality, such data should be prioritized for more accurate modeling.</p></li>
-</ul>
-<p><strong>2. Rural population data:</strong></p>
-<ul>
-<li><p><strong>Definition:</strong> Geocoded population data specifically for rural areas. This could be in point format (e.g., individual buildings with population attributes) or raster format (population grids).</p></li>
-<li><p><strong>Format:</strong> Point shapefile with rural buildings containing population statistics in rural areas.</p></li>
-<li><p><strong>Considerations:</strong> For robust modeling, the most reliable data is national geocoded data for “rural” buildings (representing rural population) based on cadastral information or equivalent, with a clear definition of whether buildings are in urban or rural areas. This distinction is critical to ensure that only the rural population is included in the calculation. In cases where national data are not available, globally produced urban extents may be used, such as the <a href="https://www.earthdata.nasa.gov/data/catalog/sedac-ciesin-sedac-grumpv1-ext-1.00">Global Rural-Urban Mapping Project v1 Urban Extents Grid</a>.</p></li>
-</ul>
-<p><strong>Spatial reference system</strong></p>
-<p>All datasets used in this guide are assumed to have a common spatial reference system (e.g., WGS 1984 UTM Zone 43N for the Kyrgyzstan example). For seamless modeling, please ensure all your input datasets are projected into a consistent and appropriate spatial reference system relevant to your country or region.</p>
-<p><strong>Input geodata sources (examples)</strong></p>
-<p>The table below provides examples of the input geospatial data used in this guide. Users are expected to identify and procure equivalent open or national administrative datasets for their specific region. For the Kyrgyzstan case study, data was sourced from national custodian bodies.</p>
-<p>Table 1: Input geodata used in this guide</p>
-<table>
-<tbody><tr>
-<th>
-Geodata
-</th>
-<th>
-Name of geodata
-</th>
-<th>
-National/Open Data
-</th>
-<th>
-Used in Analysis
-</th>
-<th>
-Link
-</th>
-</tr>
-<tr>
-<td colspan="5">
-<strong>Administrative</strong>
-</td>
-</tr>
-<tr>
-<td>
-Kemin rayon boundary
-</td>
-<td>
-Kemin_KGZ
-</td>
-<td>
-National
-</td>
-<td>
-Yes
-</td>
-<td>
-<a href="https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20Inputdata.zip?download=">Kemin_KGZ</a>
-</td>
-</tr>
-<tr>
-<td>
-Chuy region boundary
-</td>
-<td>
-Chuy_KGZ
-</td>
-<td>
-National
-</td>
-<td>
-No (visual only)
-</td>
-<td>
-<a href="https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20Inputdata.zip?download=">Chuy_KGZ</a>
-</td>
-</tr>
-<tr>
-<td colspan="5">
-<strong>Road network</strong>
-</td>
-</tr>
-<tr>
-<td>
-All-season roads for Kyrgyzstan
-</td>
-<td>
-KGZ_allroads
-</td>
-<td>
-National
-</td>
-<td>
-Yes
-</td>
-<td>
-<a href="https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20Inputdata.zip?download=">KGZ_allroads</a>
-</td>
-</tr>
-<tr>
-<td colspan="5">
-<strong>Population in rural areas</strong>
-</td>
-</tr>
-<tr>
-<td>
-Buildings in rural areas with population information in Chuy region
-</td>
-<td>
-Chuy_buildingsUTM43.shp
-</td>
-<td>
-National
-</td>
-<td>
-Yes
-</td>
-<td>
-<a href="https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20Inputdata.zip?download=">Chuy_buildingsUTM43.shp</a>
-</td>
-</tr>
-</tbody></table>
-<p>Upon completion of the guide you can assess your results against Final project with all deliverables and geospatial datasets via this <a href="https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/main/data/SDG911/SDG%20911%20ResultData.zip?download=">link</a>.</p>
+<p>The methodology below is presented in a step-by-step approach from data processing to indicator calculation, primarily using QGIS. Step 1 ensures all necessary data is organized and accessible within your QGIS environment.</p>
+<p><strong>1. Create a dedicated project folder:</strong> Create a new folder on your local drive (e.g., D:/SDG_911_Project). This folder will house all your input and output data.</p>
+<p><strong>2. Download and unzip data:</strong> Download all required spatial datasets (identifying relevant national or open global sources for your area, similar to the examples referenced above). Unzip all downloaded files into your local drive (e.g.&nbsp;the D:/SDG_911_Project folder created earlier).</p>
+<p><strong>3. Launch QGIS:</strong> Open the QGIS Desktop application.</p>
+<p><strong>4. Start a new empty project:</strong> Choose (double-click) “New Empty Project” from the QGIS initial screen or navigate to Project &gt; New Empty Project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/newemptyproject.png" class="img-fluid figure-img"></p>
+<figcaption>“New Empty Project” as shown on QGIS startup screen.</figcaption>
+</figure>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

@@ -7,7 +7,7 @@
 # --------------------------------------------------------------------------
 
 # set working directory
-setwd("C:\Users\STEY2\OneDrive - United Nations\Documents\GitHub\geospatialSDGs")
+setwd("C:\Users\STEY2\OneDrive - United Nations\Documents\GitHub\geospatialSDG911")
 # install (1) GitHub Desktop and (2) Git GUI via installers.
 # (code below) install quarto on RStudio via:
 # install.packages("quarto")

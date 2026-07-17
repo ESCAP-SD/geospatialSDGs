@@ -30,5 +30,5 @@ page-layout: full
 
 This guide provides a robust and replicable methodology for calculating SDG indicator 9.1.1 using a widely available open-source GIS software (QGIS) and national geospatial datasets. By following these steps, National Statistics Offices and GIS professionals can effectively estimate rural access to all-season roads in their respective countries.
 
-**Additional information:** The guide was developed by Elena Hristev, ESCAP Consultant. For more details, you may contact her directly at lena.hristev@gmail.com or contact ESCAP Statistics Division at stat.unescap@un.org
+**Additional information:** The guide was developed by Elena Hristev, ESCAP Consultant. For more details, you may contact her directly at [lena.hristev@gmail.com](mailto:lena.hristev@gmail.com) or contact ESCAP Statistics Division at [stat.unescap@un.org](mailto:stat.unescap@un.org)
 
