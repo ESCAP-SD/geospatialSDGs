@@ -1,0 +1,56 @@
+---
+title: ""
+title-block-style: none
+page-layout: full
+
+---
+
+::: {.columns .home-logos-split}
+
+::: {.column}
+![](assets/escap_logo.png){.home-logo .escap}
+:::
+
+::: {.column style="text-align: right;"}
+![](assets/sdg11.png){.home-logo .sdg11}
+
+:::
+
+:::
+
+# Step 5: Calculating Secondary Indicators
+
+There are two important secondary indicators that help interpret the value of the main SDG 11.3.1 indicator, providing a better understanding of the nature of urban growth in each urban area. Both indicators use the same input and output data as the main indicator and thus will not require additional geospatial processing.
+
+**1. Built-up area per capita:**
+
+- **Definition:** This measures the average amount of built-up area available to each person in an urban area during each analysis year. This indicator can help identify when urban areas become too dense or too sparsely populated.
+- **Formula:** Built-up area per capita (m^2^/person) = UrBU~t~ / Pop~t~
+Where:
+  - UrBU~t~: The total built-up area in the urban area at time t (in square meters)
+  - Pop~t~: The population in the urban area at time t
+- **Calculation using input data (example):**
+  - 2017 Bishkek built-up area: 148.2382 km^2^ = 148,238,200 m^2^
+  - 2020 Bishkek built-up area: 152.7060 km^2^ = 152,706,000 m^2^
+  - 2017 Bishkek population: 1,184,665
+  - 2020 Bishkek population: 1,394,755
+  - **Built-up area per capita (2017)** = 148,238,200 m^2^ / 1,184,665 = **125.13 m^2^/person**
+  - **Built-up area per capita (2020)** = 152,706,000 m^2^ / 1,394,755 = **109.49 m^2^/person**
+
+**2. Total change in built-up area (%):**
+
+- **Definition:** This measures the total increase in built-up areas within the urban area over time. When applied to a smaller part of an urban area (e.g., the core city), this indicator can be used to understand densification trends. It uses the same inputs as the Land Consumption Rate.
+- **Formula:** Total change in built-up area (%) = (UrBU~t+n~ - UrBU~t~) / (UrBU~t~)
+
+Where:
+
+  - UrBU~t+n~: Total built-up area in the urban area at the current/end year
+  - UrBU~t~: Total built-up area in the urban area at the past/initial year
+- **Calculation using input data (example):**
+  - 2017 Bishkek built-up area: 148,238,200 m^2^
+  - 2020 Bishkek built-up area: 152,706,000 m^2^
+  - **Total change in built-up area (%)** = (152,706,000 m^2^ - 148,238,200 m^2^) /
+148,238,200 m^2^ = 0.03 or **3%**
+
+Following these calculations, it would be beneficial to utilize advanced Map Algebra instruments within QGIS or other GIS software for more in-depth spatial analysis and visualization of land consumption and population dynamics.
+

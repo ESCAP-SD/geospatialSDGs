@@ -1,0 +1,47 @@
+---
+title: ""
+title-block-style: none
+page-layout: full
+
+---
+
+::: {.columns .home-logos-split}
+
+::: {.column}
+![](assets/escap_logo.png){.home-logo .escap}
+:::
+
+::: {.column style="text-align: right;"}
+![](assets/sdg11.png){.home-logo .sdg11}
+
+:::
+
+:::
+
+# Key Recommendations
+
+- **Data consistency:** Ensure that land use/land cover and population datasets are consistent in terms of methodology, spatial resolution, and temporal coverage across different time periods.
+- **Definition of urban area:** Consistently apply a robust methodology, such as DEGURBA, to delineate urban areas for analysis. This ensures that the indicator reflects actual urban dynamics rather than administrative boundaries alone.
+- **Spatial reference systems:** Always maintain consistency in spatial reference systems across all input datasets to prevent projection errors during geospatial operations.
+- **Data validation:** Regularly validate your derived built-up area and population estimates against other reliable sources or ground truth data to ensure accuracy.
+- **Longer time series:** Where possible, utilize longer time series (e.g., 5 or 10-year intervals) for more robust trend analysis of land consumption and population growth rates, especially when relying on satellite imagery.
+- **Custom tool development:** For repetitive tasks or national-scale reporting, consider developing custom scripts or models within QGIS (e.g., using Python/PyQGIS) to automate the workflow.
+- **Capacity building:** Continuous training and knowledge sharing in geospatial data processing and analysis are crucial for NSOs to effectively implement and report on complex geospatial indicators such as SDG 11.3.1.
+
+By adopting this systematic approach, countries can gain valuable insights into their urban development patterns, inform sustainable urbanization policies, and contribute to achieving SDGs.
+
+# Conclusion
+
+This guide provides a comprehensive and replicable methodology for modeling SDG indicator 11.3.1 using readily available open-source GIS software (QGIS) and global/national geospatial datasets. By following these steps, National Statistics Offices and GIS professionals can effectively assess the ratio of land consumption rate to population growth rate within their urban areas and contribute to global monitoring efforts.
+
+**Additional information:** The guide was developed by Elena Hristev, ESCAP Consultant. For more details, you may contact her directly at [lena.hristev@gmail.com](mailto:lena.hristev@gmail.com) or contact ESCAP Statistics Division at [stat.unescap@un.org](mailto:stat.unescap@un.org)
+
+**References:**
+
+1. [SDG 11.3.1 Reporting Template](https://data.unhabitat.org/documents/b4dab587547d4b6cbf591098df7f27fc/about)
+2. [Global Human Settlement Layer](https://human-settlement.emergency.copernicus.eu/tools.php)
+3. [Sentinel-2 10-Meter Land Use/Land Cover](https://livingatlas.arcgis.com/landcover/)
+4. [Dynamic World](https://dynamicworld.app/)
+5. [East View Geospatial](https://shop.geospatial.com/)
+6. [Kyrgyzstan Population Count 2020](https://hub.worldpop.org/geodata/summary?id=27149)
+

@@ -1,0 +1,33 @@
+---
+title: ""
+title-block-style: none
+page-layout: full
+
+---
+
+::: {.columns .home-logos-split}
+
+::: {.column}
+![](assets/escap_logo.png){.home-logo .escap}
+:::
+
+::: {.column style="text-align: right;"}
+![](assets/sdg11.png){.home-logo .sdg11}
+
+:::
+
+:::
+
+# Step 1: Preprocessing Data
+
+This initial step ensures all necessary data is organized and easily accessible.
+
+**1. Create a dedicated project folder:** Create a new folder on your local drive (e.g., D:/SDG_1131_Project, or a name of your choosing). This folder will house all your input and output data.
+
+**2. Download and unzip data:** Download all required spatial datasets (identifying relevant national or open global sources for your area, similar to the examples referenced above). Unzip all downloaded files into your local drive (e.g. the D:/SDG_1131_Project folder created earlier).
+
+**3. Launch QGIS:** Open the QGIS Desktop application.
+
+**4. Start a new empty project:** Choose (double-click) "New Empty Project" from the QGIS initial screen or navigate to Project > New Empty Project.
+
+NOTE: All geospatial datasets used in this project should ideally have a common geographic reference system for accurate processing. If they don't, QGIS will often reproject them, but it is best practice to ensure consistency beforehand.
