@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs/sdg911
 
 website:
   title: "Step-by-step Guide on Estimating SDG 9.1.1 Using Geospatial Data"

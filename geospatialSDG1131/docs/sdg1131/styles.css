@@ -1,0 +1,182 @@
+
+
+/* --- Brand + typography --- */
+
+/* Roboto (Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root{
+  --escap-blue: #0066B0;
+  --escap-gold: #F4BE18;
+}
+
+body, .content, .nav-footer{
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Links */
+a{ color: var(--escap-blue); }
+a:hover{ color: var(--escap-gold); }
+
+/* --- Site-wide layout --- */
+
+/* On page-layout: table of content (TOC) on the left column (taking up 1 fraction or 20% of space), main column on the right (taking up 4 fractions or 80%) and let content span full width */
+.page-layout-full .page-columns{
+  grid-template-columns: 250px minmax(0, 1fr) !important;
+}
+
+#TOC {
+  width: 100%;
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+#quarto-document-content {
+  max-width: 100%;
+  width: 100%;
+}
+
+#quarto-margin-sidebar {
+  grid-column: 1;
+}
+
+main.content {
+  grid-column: 2;
+  max-width: 100%;
+}
+
+/* Cosmetic improvements to design of TOC */
+/* #TOC ul targets the unordered list (<ul>) inside the TOC. padding-left: 0 = removes the default indentation on lists. Normally lists are pushed to the right a bit. list-style: none = remove bullet points. */
+#TOC ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* #TOC a targets all links (<a>) inside the TOC. text-decoration: none = removes the underline from links. font-size: 0.9rem = makes text slightly smaller than normal. rem = relative size (based on root font) */
+#TOC a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* #TOC a:hover targets links when people hover their mouse over them. color: --escap-gold = change the color of the texts to gold when hovering over them. */
+#TOC a:hover {
+  color: var(--escap-gold);
+}
+
+/* Make the Quarto document content use full width of the right column */
+.page-layout-full #quarto-document-content{
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Make tables shown in full width */
+main.content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Add borders/outlines and background color to tables. <th> is table header and <td> is table  */
+main.content th {
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #0066B0;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 8px
+}
+
+main.content td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* Center images/figures captions */
+.quarto-figure figcaption {
+  text-align: center;
+}
+
+/* Sidebar navigation: Changing font size and sentence/line spacing */
+.sidebar nav {
+  font-size: 0.5rem;
+}
+
+.sidebar .sidebar-item {
+  line-height: 1.6;
+}
+
+.sidebar .sidebar-item-container {
+  margin-bottom: 0.4rem;
+}
+
+/* --- Homepage logos (ESCAP left, SDG11 right) and title --- */
+
+.home-logos-split{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 10px 0 14px 0;
+}
+
+.home-logos-left,
+.home-logos-right{
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+}
+
+.home-logos-left{
+  justify-content: flex-start;
+}
+
+.home-logos-right{
+  justify-content: flex-end;
+}
+
+.home-logo{
+  height: auto;
+  max-width: min(520px, 90vw);
+}
+
+.home-logo.escap{ max-height: 85px; }
+.home-logo.sdg11{  max-height: 95px; }
+
+/* Mobile: stack neatly, left aligned */
+@media (max-width: 768px){
+  .home-logos-split{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home-logos-right{
+    justify-content: flex-start;
+  }
+}
+
+/* Title below the logos but not showing in TOC */
+.logo-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Chapter titles properly appearing on main content column instead of a clickable link */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* --- Buttons  --- */
+.btn-primary{
+  background-color: var(--escap-blue);
+  border-color: var(--escap-blue);
+}
+.btn-primary:hover{
+  background-color: var(--escap-gold);
+  border-color: var(--escap-gold);
+  color: #000;
+}

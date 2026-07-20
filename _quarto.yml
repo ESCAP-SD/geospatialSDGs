@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Step-by-step guides for producing geospatial SDGs and Degree of Urbanization in QGIS"
+  favicon: assets/sd.png
+  
+  navbar:
+    background: "#0066B0"
+    foreground: "#FFFFFF"
+    logo: assets/escap_alternate_white.png
+    logo-alt: "ESCAP"
+    right:
+      - text: "Home"
+        href: index.qmd
+
+  page-footer:
+    left: "Economic and Social Commission for Asia and the Pacific"
+    right:
+      - text: "Big Data and Data Science for Official Statistics in Asia and the Pacific"
+        
+format:
+  html:
+    toc: false
+    css: 
+     - styles.css
+     - dt.css
+
+     
