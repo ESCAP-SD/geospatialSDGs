@@ -34,12 +34,12 @@ These guides are intended to support National Statistical Offices (NSOs), GIS pr
 - **Focus:** Applying the Degree of Urbanization classification to map urban extent. 
 
 ### 2. **Modeling SDG 9.1.1: Rural Population Access to Roads**
-- **[Interactive Step-by-step Guide on Estimating SDG 9.1.1 using Geospatial Data](docs/geospatialSDG911/index.html)** (ENGLISH)
+- **[Interactive Step-by-step Guide on Estimating SDG 9.1.1 using Geospatial Data](./docs/sdg911/index.html)** (ENGLISH)
 - **[Download PDF](./geospatialSDG911/KGZ_911_QGISstepbystepFinal_ENG_ESCAP.pdf)** (ENGLISH)
 - **Focus:** Estimating the share of rural population within 2 km of all-season roads using OSM and population data.
 
 ### 3. **Modeling SDG 11.3.1: Ratio of Land Consumption rate to Population Growth**
-- **[Interactive Step-by-step Guide on Estimating SDG 11.3.1 using Geospatial Data](docs/geospatialSDG1131/index.html)** (ENGLISH)
+- **[Interactive Step-by-step Guide on Estimating SDG 11.3.1 using Geospatial Data](./docs/sdg1131/index.html)** (ENGLISH)
 - **[Download PDF](./geospatialSDG1131/KGZ_1131_QGISstepbystepFinal_ENG_ESCAP.pdf)** (ENGLISH)
 - **Focus:** Comparing urban land expansion and population growth using time-series LULC and WorldPop data.
 
