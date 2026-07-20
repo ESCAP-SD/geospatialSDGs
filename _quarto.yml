@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: ./docs
 
 website:
   title: "Step-by-step guides for producing geospatial SDGs and Degree of Urbanization in QGIS"
