@@ -72,8 +72,8 @@ To follow the tutorials effectively, you should have:
 
 ## Author & Contact
 
-Developed by Elena Hristev, Consultant, UN ESCAP  
-📧 [escap-statistics@un.org](mailto:escap-statistics@un.org)
+Developed by Sovannaroth Tey, Associate Statistician, ESCAP, and Elena Hristev, Consultant, ESCAP  
+📧 [stat.unescap@un.org](mailto:stat.unescap@un.org)
 
 ## License
 
