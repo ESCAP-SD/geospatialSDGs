@@ -72,7 +72,7 @@ Table 1: Input geodata used in this guide
     <td>Kemin_KGZ</td>
     <td>National</td>
     <td>Yes</td>
-    <td>[Kemin_KGZ](https://github.com/ESCAP-SD/geospatialSDGs/blob/sdg911/geospatialSDG911/data/SDG911/Kyrgyzstan_SDG%20911%20Inputdata.zip)</td>
+    <td>[Kemin_KGZ](https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/sdg911/geospatialSDG911/data/SDG911/Kyrgyzstan_SDG%20911%20Inputdata.zip?download=)</td>
   </tr>
   
   <tr>
@@ -80,7 +80,7 @@ Table 1: Input geodata used in this guide
     <td>Chuy_KGZ</td>
     <td>National</td>
     <td>No (visual only)</td>
-    <td>[Chuy_KGZ](https://github.com/ESCAP-SD/geospatialSDGs/blob/sdg911/geospatialSDG911/data/SDG911/Kyrgyzstan_SDG%20911%20Inputdata.zip)</td>
+    <td>[Chuy_KGZ](https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/sdg911/geospatialSDG911/data/SDG911/Kyrgyzstan_SDG%20911%20Inputdata.zip?download=)</td>
   </tr>
   
   <tr>
@@ -92,7 +92,7 @@ Table 1: Input geodata used in this guide
     <td>KGZ_allroads</td>
     <td>National</td>
     <td>Yes</td>
-    <td>[KGZ_allroads](https://github.com/ESCAP-SD/geospatialSDGs/blob/sdg911/geospatialSDG911/data/SDG911/Kyrgyzstan_SDG%20911%20Inputdata.zip)</td>
+    <td>[KGZ_allroads](https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/sdg911/geospatialSDG911/data/SDG911/Kyrgyzstan_SDG%20911%20Inputdata.zip?download=)</td>
   </tr>
   
   <tr>
@@ -104,7 +104,7 @@ Table 1: Input geodata used in this guide
     <td>Chuy_buildingsUTM43.shp</td>
     <td>National</td>
     <td>Yes</td>
-    <td>[Chuy_buildingsUTM43.shp](https://github.com/ESCAP-SD/geospatialSDGs/blob/sdg911/geospatialSDG911/data/SDG911/Kyrgyzstan_SDG%20911%20Inputdata.zip)</td>
+    <td>[Chuy_buildingsUTM43.shp](https://github.com/ESCAP-SD/geospatialSDGs/raw/refs/heads/sdg911/geospatialSDG911/data/SDG911/Kyrgyzstan_SDG%20911%20Inputdata.zip?download=)</td>
   </tr>
 </table>
 
